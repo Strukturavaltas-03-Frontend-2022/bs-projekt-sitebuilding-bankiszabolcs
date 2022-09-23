@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;700&family=Lato:wght@300;400;700&family=Mulish:wght@300;400;500;700&display=swap");
+@import url("https://use.typekit.net/rrk8tww.css");
+/* font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+font-family: 'Lato', Helvetica, Arial, sans-serif;
+font-family: 'Muli', Helvetica, Arial, sans-serif; */
+
+:root {
+  --purple: #844095;
+  --red: #f30013;
+  --yellow: #fdcc52;
+  --font-purple: #e1c4d6;
+  --jumbotronYellow: #fdc948;
+}
+
+#firstPage {
+  background-image: linear-gradient(90deg, var(--red), var(--purple));
+}
+
+#firstPage:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("./img/bg-pattern.png");
+}
+
+.start {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: var(--yellow);
+}
+
+.menu--item {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #e1c4d6;
+}
+
+.menu--item:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.start:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.paragraph {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.button {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: x-small;
+  padding: 10px 30px;
+}
+
+.button:hover {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  transition: all 0.3s;
+}
+
+.jumbotron {
+  background-color: var(--jumbotronYellow);
+  font-family: Muli, Helvetica, Arial, sans-serif;
+}
+
+.icon {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a63569;
+}
+
+/* .startingPage {
+  background: url("./img/bg-cta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+ */
+.startingPage {
+  position: relative;
+}
+.startingPage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("./img/bg-cta.jpg");
+  background-position: center;
+  filter: grayscale(50%);
+}
+
+.startingPageCont {
+  height: 50vh;
+}
+
+.btn {
+  display: inline;
+}
+
+.iphone {
+  max-width: 20%;
+}
