@@ -130,3 +130,40 @@ font-family: 'Muli', Helvetica, Arial, sans-serif; */
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+.socialNetwork{
+  background-color: rgba(253, 202, 72, 0.9)
+}
+
+.socialNetwork:hover{
+  background-color: rgba(253, 202, 72)
+}
+
+.socialNetwork .fa{
+  text-align: center;
+padding: 1rem;
+border-radius: 50%;
+color: white;
+width: 70px;
+}
+
+.fa-twitter{
+  background-color: #1DA1F2;
+}
+
+.fa-facebook{
+  background-color: #4267B2;
+}
+
+.fa-google-plus{
+  background-color: #DB4437
+}
+
+a.modalLink{
+  color: #6c757d;
+  text-decoration: none;
+}
+
+a.modalLink:hover{
+  color: var(--yellow);
+}

@@ -14,15 +14,15 @@
   </head>
   <body>
     <div id="firstPage" class="container-fluid pt-2  pb-5 px-0">
-            <nav class="navbar">
-                <div class="container"> 
+            <nav id="menu" class="navbar fixed-top">
+                <div class="container "> 
                     <div class="navbar__left">
                         <a href="#" class="start"> Start Bootstrap</a>
                     </div>
                     <div class="navbar__right ">
-                        <a class="mr-5  menu--item" href="#">Download</a>
-                        <a class="mr-5  menu--item" href="#">Features</a>
-                        <a class="menu--item" href="#">Contact</a>
+                        <a class="mr-5  menu--item" href="#download">Download</a>
+                        <a class="mr-5  menu--item" href="#features">Features</a>
+                        <a class="menu--item" href="#contact">Contact</a>
                         </ul>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
     </div>
-    <div class="jumbotron jumbotron-fluid">
+    <div id="download" class="jumbotron jumbotron-fluid">
         <div class="container w-25 text-center">
           <h2 class="display-4">Discover what all the buzz is about</h2>
           <small>Our app is available on any mobil device! Download now to get started!</small>
@@ -50,7 +50,7 @@
         </div>
       </div>
     <section>
-    <div class="container">
+    <div id="features" class="container">
         <div class="row">
             <div class="col text-center">
                 <h2 class="display-4">Unlimited Features, Unlimited Fun</h2>
@@ -118,24 +118,100 @@
             </div>
         </div>
     </section>
+    <section>
+    <div id="contact" class="container-fluid socialNetwork py-5">
+      <div class="row mt-4">
+        <div class="col h3 text-center mb-4">We <span class="heart">❤</span> new friend!</div>
+      </div>
+      <div class="row d-flex justify-content-center mb-4" >
+        <div class="col d-flex justify-content-center">
+          <i class="fa fa-twitter fa-2x mx-1" aria-hidden="true"></i>
+          <i class="fa fa-facebook fa-2x mx-1" aria-hidden="true"></i>
+          <i class="fa fa-google-plus fa-2x mx-1" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container-fluid bg-dark">
+      <div class="row py-3">
+        <div class="col">
+          <small class=" text-muted d-block text-center"> © Your Website 2018. All Rights Reserved.</small>
+          <nav class="nav small justify-content-center">
+            <a href="#" id="privacy" class="modalLink mr-2 " data-toggle="modal" data-target="#privacyModal" >Privacy</a>
+            <a href="#" id="terms" class="modalLink mr-2 " data-toggle="modal" data-target="#termsModal" >Terms</a>
+            <a href="#" id="faq" class="modalLink"data-toggle="modal" data-target="#faqModal" >FAQ</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Privacy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-     <script
-      src="./node_modules\jquery\dist\jquery.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="./node_modules\popper.js\dist\popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="./node_modules\bootstrap\dist\js\bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    >
-</script>
+  <div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">FAQ</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Terms</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 <script src="./main.js"></script>
 <script src="https://kit.fontawesome.com/349ba3caad.js" crossorigin="anonymous"></script>
   </body>
