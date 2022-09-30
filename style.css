@@ -12,6 +12,12 @@ font-family: 'Muli', Helvetica, Arial, sans-serif; */
   --jumbotronYellow: #fdc948;
 }
 
+html {
+  scroll-behavior: smooth;
+
+}
+
+
 #firstPage {
   background-image: linear-gradient(90deg, var(--red), var(--purple));
 }
@@ -41,6 +47,10 @@ font-family: 'Muli', Helvetica, Arial, sans-serif; */
 .menu--item:hover {
   color: white;
   text-decoration: none;
+}
+
+.menu--whiteBg:hover{
+  color:var(--yellow);
 }
 
 .start:hover {
@@ -159,6 +169,14 @@ width: 70px;
   background-color: #DB4437
 }
 
+.muli{
+  font-family: muli, Helvetica, Arial, sans-serif;
+}
+
+.titles{
+  font-family:Catamaran, Helvetica, Arial, sans-serif
+}
+
 a.modalLink{
   color: #6c757d;
   text-decoration: none;
@@ -167,3 +185,4 @@ a.modalLink{
 a.modalLink:hover{
   color: var(--yellow);
 }
+

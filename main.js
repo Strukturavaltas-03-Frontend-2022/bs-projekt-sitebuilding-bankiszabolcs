@@ -17,7 +17,7 @@ $('#privacyModal').on('shown.bs.modal', function () {
     if(window.pageYOffset>0){
         navbar.style.background = 'white'
         startMenuItem.style.color = 'grey';
-        menuItems.map(element => element.style.color = 'grey') 
+        menuItems.map(element => element.style.color = 'grey')
       }else{
         navbar.style.background = 'unset'
         startMenuItem.style.color = 'var(--yellow)' 
@@ -25,5 +25,4 @@ $('#privacyModal').on('shown.bs.modal', function () {
       }
 
   })
-
 
