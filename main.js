@@ -38,4 +38,7 @@ $('#privacyModal').on('shown.bs.modal', function () {
 
   })
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 

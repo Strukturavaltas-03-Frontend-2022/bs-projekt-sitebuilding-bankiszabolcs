@@ -14,9 +14,29 @@
     <script src="https://kit.fontawesome.com/349ba3caad.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="firstPage" class="container-fluid pt-2  pb-5 px-0">
-            <nav id="menu" class="navbar fixed-top">
-                <div class="container "> 
+    <div id="firstPage" class="container-fluid pt-0 pt-lg-2  pb-5 px-0">
+      <div class="mobileMenu w-100 fixed-top"> 
+        <div class="pos-f-t ">
+          <nav class="navbar navbar-dark bg-white">
+            <a href="#" class="start"> Start Bootstrap</a>
+            <button class="navbar-toggler border text-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+              Menu
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-white p-4 d-flex flex-column align-items-center">
+            <a class="mb-3 menu--item" href="#download">Download</a>
+          <a class="mb-3 menu--item" href="#features">Features</a>
+          <a class="menu--item" href="#contact">Contact</a>
+            </div>
+          </div>      
+        </div>
+  </div>  
+            <nav id="menu" class="navbar fixed-top">      
+                 
+                <div class="container desktopMenu"> 
                     <div class="navbar__left">
                         <a href="#" class="start"> Start Bootstrap</a>
                     </div>
@@ -24,32 +44,31 @@
                         <a class="mr-5  menu--item" href="#download">Download</a>
                         <a class="mr-5  menu--item" href="#features">Features</a>
                         <a class="menu--item" href="#contact">Contact</a>
-                        </ul>
                     </div>
                 </div>
             </nav>
-            <div class="container ">
-                <div class="row my-5">
-                    <div class="col-lg-6  my-auto">
-                        <h1 class="h2 paragraph mb-5 muli">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+            <div class="container newAge">
+                <div class="row my-5 text-center">
+                    <div id="newAgeCol" class="col-lg-6 pt-5 pt-lg-0 my-auto">
+                        <h1 class="h2 paragraph mt-5 mt-lg-0 mb-5 muli">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
                         <div class="btn button">Start now for free!</div>
                     </div>
                     <div class="col-lg-6 text-center my-5">
-                      <div class="bg-image">
                         <img class="img-fluid w-50 my-5 startMobile" src="./img/phone.png" alt="">
-                        <div class="mask"></div>
-                        </div>
                     </div>
                 </div>
             </div>
     </div>
     <div id="download" class="jumbotron jumbotron-fluid">
-        <div class="container w-lg-25 text-center">
-          <h2 class="display-4 titles">Discover what all the buzz is about</h2>
-          <small class="muli">Our app is available on any mobil device! Download now to get started!</small>
-          <div class="imgContainer w-50 d-flex justify-content-center mx-auto mt-3">
-            <img class="w-25" src="./img/google-play-badge.svg" alt="Link to the Google Play where you can download the application on Android">
-            <img class="w-25" src="./img/app-store-badge.svg" alt="Link to the Apple Play where you can download the application on IOS">
+        <div class="row text-center m-3">
+          <div class="col-lg-6 offset-lg-3">
+            <h2 class="display-4 titles">Discover what all the buzz is about</h2>
+            <small class="muli">Our app is available on any mobil device! Download now to get started!</small>
+            <div class="imgContainer w-75 p-lg-5 d-flex justify-content-center mx-auto mt-3 flex-column flex-lg-row align-items-center">
+              <img class="w-50 p-2" src="./img/google-play-badge.svg" alt="Link to the Google Play where you can download the application on Android">
+              <img class="w-50 p-2" src="./img/app-store-badge.svg" alt="Link to the Apple Play where you can download the application on IOS">
+            </div>
+
           </div>
         </div>
       </div>
@@ -59,13 +78,14 @@
             <div class="col text-center">
                 <h2 class="display-4 titles">Unlimited Features, Unlimited Fun</h2>
                 <small class="muli">Check out what you can do with this app theme!</small>
+                <div class="mx-auto my-3 line"></div>
             </div>
         </div>
     </div>
     <div class="container my-5">
     <div class="row">
-            <div class="col-lg-4">
-                <img class="img-fluid" src="./img/phone.png" alt="">
+            <div class="col-6 mx-auto col-lg-4 text-center  mb-4 mb-lg-0">
+                <img class="img-fluid w-75 " src="./img/phone.png" alt="">
             </div>
             <div class="col-lg-8 my-auto muli">
                 <div class="row">
@@ -111,12 +131,12 @@
     </section>
     <section>
         <div class="container-fluid startingPageCont">
-            <div class="row h-100 startingPage">
-                <div class="col-8 ">
-                    <div class="d-flex flex-column align-items-center justify-content-center h-100 text-white">
+            <div class="row startingPage h-100">
+                <div class="col-8 col-lg-4 offset-lg-2 my-auto">
+                    <div class=" text-white pl-2 ">
                         <h5 class="muli display-4">Stop waiting.</h5>
                         <h5 class="muli display-4">Start building.</h5>
-                        <div class="btn button">Let's get started</d>
+                        <div class="btn button ">Let's get started</d>
                     </div>
                 </div>
             </div>
@@ -125,13 +145,13 @@
     <section>
     <div id="contact" class="container-fluid socialNetwork py-5">
       <div class="row mt-4">
-        <div class="col h3 text-center mb-4 .muli">We <span class="heart">❤</span> new friend!</div>
+        <div class="col h3 text-center mb-4 muli">We <span class="heart">❤</span> new friend!</div>
       </div>
       <div class="row d-flex justify-content-center mb-4" >
         <div class="col d-flex justify-content-center">
-          <i class="fa fa-twitter fa-2x mx-1" aria-hidden="true"></i>
-          <i class="fa fa-facebook fa-2x mx-1" aria-hidden="true"></i>
-          <i class="fa fa-google-plus fa-2x mx-1" aria-hidden="true"></i>
+         <a href="http://twitter.com"><i class="fa fa-twitter fa-2x mx-1" data-toggle="tooltip" data-placement="top" title="Link az applikáció Twitter oldalára" aria-hidden="true"></i></a> 
+         <a href="http://facebook.com"> <i class="fa fa-facebook fa-2x mx-1" data-toggle="tooltip" data-placement="top" title="Link az applikáció Facebook oldalára" aria-hidden="true"></i> </a> 
+         <a href="http://google.com"><i class="fa fa-google-plus fa-2x mx-1" data-toggle="tooltip" data-placement="top" title="Link az applikácó Google Plus oldalára" aria-hidden="true"></i></a> 
         </div>
       </div>
     </div>
@@ -151,6 +171,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Modal -->
   <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

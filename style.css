@@ -4,6 +4,7 @@
 font-family: 'Lato', Helvetica, Arial, sans-serif;
 font-family: 'Muli', Helvetica, Arial, sans-serif; */
 
+
 :root {
   --purple: #844095;
   --red: #f30013;
@@ -109,7 +110,8 @@ html {
 .startingPage {
   background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.401)), url("./img/bg-cta.jpg");
   background-repeat:no-repeat, no-repeat;
-  background-position: center;
+  background-position: center, center;
+  background-size: cover;
 }
 
 
@@ -125,6 +127,12 @@ html {
   max-width: 20%;
 }
 
+.line{
+
+  width: 25%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.305);
+}
 
 .icon-screen-smartphone,
 .icon-camera,
@@ -184,3 +192,35 @@ a.modalLink:hover{
   color: var(--yellow);
 }
 
+.mobileMenu{
+  display: none;
+  margin:0
+}
+
+.heart{
+  color: var(--red)
+}
+
+
+@media (max-width: 992px) { 
+  .mobileMenu {
+    display:block;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  .display-4{
+    font-size: 1.8rem
+  }
+
+  .lastButton{
+    display: inline;
+  }
+
+}
