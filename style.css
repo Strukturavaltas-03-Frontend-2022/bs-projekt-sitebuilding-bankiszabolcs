@@ -157,7 +157,7 @@ html {
 
 .socialNetwork .fa{
   text-align: center;
-padding: 1rem;
+padding: 1rem ;
 border-radius: 50%;
 color: white;
 width: 70px;
@@ -205,6 +205,10 @@ a.modalLink:hover{
   font-size: 1rem;
 }
 
+.newAgeCol{
+  text-align: left;
+}
+
 
 @media (max-width: 992px) { 
   .mobileMenu {
@@ -220,7 +224,7 @@ a.modalLink:hover{
   }
 
   .display-4{
-    font-size: 1.8rem
+    font-size: 2rem
   }
 
   .lastButton{
@@ -229,7 +233,27 @@ a.modalLink:hover{
 
   .paragraph{
     font-size: 1.3rem;
-
   }
+
+  .titles{
+    font-size: 3rem;
+  }
+
+  .menu--item:hover {
+    color: rgb(103, 103, 103);
+  }
+
+.start:hover {
+  color: rgb(103, 103, 103);
+}
+
+.paragraph{
+  text-align: center;
+}
+
+.newAgeCol{
+  text-align: center;
+}
+
 
 }
